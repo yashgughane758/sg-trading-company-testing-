@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 36" width="320" height="36" fill="none">
+  <text x="0" y="26" font-family="'Space Grotesk', 'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="1.5">
+    <tspan fill="#C98249">SG </tspan>
+    <tspan fill="#F5F1E9" font-weight="700">TRADING COMPANY</tspan>
+  </text>
+  <rect x="0" y="33" width="36" height="2" rx="1" fill="#C98249"/>
+  <rect x="42" y="33" width="8" height="2" rx="1" fill="rgba(201, 130, 73, 0.4)"/>
+</svg>

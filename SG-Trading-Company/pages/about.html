@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SG Trading Company</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/logo.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR (Charcoal Background + Copper SG + White Company Name)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Mobile Menu Button (Positioned on the Left like ChatGPT App) -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="../index.html" class="brand-logo" aria-label="SG Trading Company Home">
+        <span class="brand-sg-initials">SG</span>
+        <span class="brand-company-text">TRADING COMPANY</span>
+      </a>
+
+      <div class="header-right">
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Location Button (Replacing search button) -->
+        <a href="contact.html" class="header-location-btn" aria-label="Showroom Location">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Location</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer (ChatGPT Mobile App Style - Left-Sliding Sidebar) -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Sidebar">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-sg-initials" style="font-size: 1.6rem;">SG</span>
+        <div class="drawer-brand-text">
+          <span class="brand-company-text">TRADING COMPANY</span>
+          <span class="drawer-brand-sub">Electrical Supplies</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="mobileNavClose" aria-label="Close navigation sidebar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+      <ul class="drawer-nav-list">
+        <li>
+          <a href="../index.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </span>
+            <span class="drawer-label">Home</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="drawer-nav-link active">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </span>
+            <span class="drawer-label">About Us</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </span>
+            <span class="drawer-label">Products</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="gallery.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            </span>
+            <span class="drawer-label">Showroom Gallery</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span class="drawer-label">Contact & Location</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="drawer-showroom-card">
+        <div class="drawer-showroom-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Visit Showroom
+        </div>
+        <p class="drawer-showroom-desc">Experience modular switches, wire spools, and designer fixtures in person.</p>
+        <a href="contact.html" class="btn btn-copper drawer-showroom-btn">
+          <span>Get Directions</span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-contact-line">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>+91 98765 43210</span>
+      </div>
+      <div class="drawer-tagline">Quality &bull; Reliability &bull; Trust</div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =======================================================================
+         ABOUT PAGE HERO (Clean, Bold Headline & Direct Showroom Photography)
+         ======================================================================= -->
+    <section class="page-hero-banner">
+      <div class="hero-diagonal-stripes" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-text">
+            <h1 class="page-hero-title">
+              About SG Trading<br><span class="copper-text">Company</span>
+            </h1>
+            <p class="page-hero-desc">
+              Your premier electrical trade partner delivering certified electrical components, designer modular switchgear, industrial cables, and energy-efficient lighting solutions.
+            </p>
+
+            <div class="slide-actions">
+              <a href="products.html" class="btn-hero-explore">
+                <span>Explore Products</span>
+                <span class="hero-diagonal-arrow">&#8599;</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="page-hero-visual">
+            <img src="../assets/images/shop/showroom-main.jpg" alt="SG Trading Company Electrical Showroom Interior" class="page-hero-img-direct">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Curve Transition to Warm White (#F5F1E9) -->
+      <div class="hero-bottom-curve" aria-hidden="true">
+        <svg viewBox="0 0 1200 48" preserveAspectRatio="none">
+          <path d="M0,0 C320,44 880,44 1200,0 L1200,48 L0,48 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Detailed Intro Section -->
+    <section class="about-intro-section">
+      <div class="container">
+        <div class="about-intro-grid">
+          <div class="about-intro-text">
+            <h2>Delivering Electrical Excellence With Integrity</h2>
+            <p>
+              Founded with a commitment to uncompromised quality, <strong>SG Trading Company</strong> has grown to become one of the most reliable suppliers of electrical products for commercial developers, contractors, electricians, and homeowners.
+            </p>
+            <p>
+              Our flagship showroom and centralized warehouse store an extensive range of certified cables, modular switchgear, heavy-duty distribution boards, energy-efficient LED luminaires, and ventilating fans from industry-leading manufacturers.
+            </p>
+            <a href="contact.html" class="btn btn-copper btn-arrow">
+              <span>Visit Showroom</span>
+              <span class="btn-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+            </a>
+          </div>
+          <div class="about-intro-img">
+            <img src="../assets/images/shop/showroom-1.jpg" alt="SG Trading Company Display Counter">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Grid -->
+    <section class="values-section">
+      <div class="container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: var(--charcoal);">Our Core Business Values</h2>
+          <p style="color: var(--muted-text); margin-top: 8px;">Guiding principles that define every customer relationship and wholesale supply partnership.</p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <h3 class="value-title">Quality Assurance</h3>
+            <p class="value-desc">We stock only verified, tested, and certified electrical goods compliant with national safety norms.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div>
+            <h3 class="value-title">Reliable Inventory</h3>
+            <p class="value-desc">Continuous availability across bulk wire rolls, switch plates, and protective devices with prompt delivery.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg></div>
+            <h3 class="value-title">Trade Trust</h3>
+            <p class="value-desc">Decades of relationships with trusted contractors, electrical builders, and discerning retail clients.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+            <h3 class="value-title">Technical Guidance</h3>
+            <p class="value-desc">Expert in-store recommendations for load computations, wire sizing, and architect specifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality-pledge-section">
+      <div class="container">
+        <div class="quality-card">
+          <h2>Our Quality Guarantee</h2>
+          <p>
+            Every product supplied by SG Trading Company carries full manufacturer guarantees and complies with regulatory electrical standards. We test and curate every line so you can install with total confidence.
+          </p>
+          <a href="contact.html" class="btn btn-copper">Visit Showroom &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (Requirement 5 – Exact Original First Footer)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo-title">SG TRADING COMPANY</div>
+          <span class="footer-logo-tagline">Quality • Reliability • Trust</span>
+          <p class="footer-desc">Your premier electrical supplier providing certified electrical cables, switches, safety gear, and modern illumination solutions.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Product Lines</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=lighting" class="footer-link">Lighting</a></li>
+            <li><a href="products.html?category=wires" class="footer-link">Wires &amp; Cables</a></li>
+            <li><a href="products.html?category=switches" class="footer-link">Switches &amp; Sockets</a></li>
+            <li><a href="products.html?category=fans" class="footer-link">Ceiling Fans</a></li>
+            <li><a href="products.html?category=protection" class="footer-link">Circuit Breakers / MCB</a></li>
+            <li><a href="products.html?category=accessories" class="footer-link">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Showroom &amp; Office</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+            <span>Plot 42, Industrial Electrical Market, Main Road, Commercial Hub</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+            <span>+91 (0) 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+            <span>Mon - Sat: 9:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SG Trading Company. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-circle" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="#" class="social-circle" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

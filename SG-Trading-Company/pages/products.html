@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Products | SG Trading Company</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/logo.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR (Charcoal Background + Copper SG + White Company Name)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Mobile Menu Button (Positioned on the Left like ChatGPT App) -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="../index.html" class="brand-logo" aria-label="SG Trading Company Home">
+        <span class="brand-sg-initials">SG</span>
+        <span class="brand-company-text">TRADING COMPANY</span>
+      </a>
+
+      <div class="header-right">
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Location Button (Replacing search button) -->
+        <a href="contact.html" class="header-location-btn" aria-label="Showroom Location">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Location</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer (ChatGPT Mobile App Style - Left-Sliding Sidebar) -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Sidebar">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-sg-initials" style="font-size: 1.6rem;">SG</span>
+        <div class="drawer-brand-text">
+          <span class="brand-company-text">TRADING COMPANY</span>
+          <span class="drawer-brand-sub">Electrical Supplies</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="mobileNavClose" aria-label="Close navigation sidebar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+      <ul class="drawer-nav-list">
+        <li>
+          <a href="../index.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </span>
+            <span class="drawer-label">Home</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </span>
+            <span class="drawer-label">About Us</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="drawer-nav-link active">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </span>
+            <span class="drawer-label">Products</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="gallery.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            </span>
+            <span class="drawer-label">Showroom Gallery</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="drawer-nav-link">
+            <span class="drawer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span class="drawer-label">Contact & Location</span>
+            <span class="drawer-arrow">&#8250;</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="drawer-showroom-card">
+        <div class="drawer-showroom-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Visit Showroom
+        </div>
+        <p class="drawer-showroom-desc">Experience modular switches, wire spools, and designer fixtures in person.</p>
+        <a href="contact.html" class="btn btn-copper drawer-showroom-btn">
+          <span>Get Directions</span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-contact-line">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>+91 98765 43210</span>
+      </div>
+      <div class="drawer-tagline">Quality &bull; Reliability &bull; Trust</div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =======================================================================
+         PRODUCTS PAGE HERO (Clean, Bold Headline & Direct Product Showcase)
+         ======================================================================= -->
+    <section class="page-hero-banner">
+      <div class="hero-diagonal-stripes" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-text">
+            <h1 class="page-hero-title">
+              Explore Our<br><span class="copper-text">Products</span>
+            </h1>
+            <p class="page-hero-desc">
+              Comprehensive electrical solutions covering certified wiring, modular switchgear, industrial circuit protection, and illumination accessories.
+            </p>
+
+            <div class="slide-actions">
+              <a href="#productsCatalog" class="btn-hero-explore">
+                <span>Browse Catalog</span>
+                <span class="hero-diagonal-arrow">&#8599;</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="page-hero-visual">
+            <img src="../assets/images/banners/products-hero.jpg" alt="SG Trading Company Electrical Product Showcase" class="page-hero-img-direct">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Curve Transition to Warm White (#F5F1E9) -->
+      <div class="hero-bottom-curve" aria-hidden="true">
+        <svg viewBox="0 0 1200 48" preserveAspectRatio="none">
+          <path d="M0,0 C320,44 880,44 1200,0 L1200,48 L0,48 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Catalog Section with Filter Pills -->
+    <section class="products-catalog-section" id="productsCatalog">
+      <div class="container">
+        
+        <!-- Category Filter Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="category-filter-buttons">
+            <button class="filter-btn active" data-category="all">All Products</button>
+            <button class="filter-btn" data-category="lighting">Lighting</button>
+            <button class="filter-btn" data-category="wires">Wires &amp; Cables</button>
+            <button class="filter-btn" data-category="switches">Switches &amp; Sockets</button>
+            <button class="filter-btn" data-category="fans">Fans</button>
+            <button class="filter-btn" data-category="protection">Protection / MCBs</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+          </div>
+        </div>
+
+        <!-- Products Grid (4 containers per category, 24 containers total) -->
+        <div class="products-display-grid" id="productsGrid">
+          
+          <!-- ==================== LIGHTING (4 Products) ==================== -->
+          <!-- 1. LED Light Bulb -->
+          <article class="product-card product-card-item" data-category="lighting">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/led-bulb.jpg" alt="LED Light Bulb" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Lighting</span>
+              <h3 class="product-card-title">LED Light Bulb</h3>
+              <p class="product-card-desc">Energy-efficient warm illumination bulb engineered for high lumen output and longevity.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 9W / B22 &amp; E27</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 2. Slim Recessed LED Downlight -->
+          <article class="product-card product-card-item" data-category="lighting">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/lighting.jpg" alt="Slim Recessed LED Downlight" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Lighting</span>
+              <h3 class="product-card-title">Slim Recessed Downlight</h3>
+              <p class="product-card-desc">Flush architectural ceiling downlight delivering uniform glare-free ambient brightness.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 15W / 6500K Cool White</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 3. Vintage Edison Filament Bulb -->
+          <article class="product-card product-card-item" data-category="lighting">
+            <div class="product-card-thumb">
+              <img src="../assets/images/banners/hero-composition.jpg" alt="Vintage Edison Filament Bulb" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Lighting</span>
+              <h3 class="product-card-title">Vintage Filament Bulb</h3>
+              <p class="product-card-desc">Warm amber glow decorative filament bulb ideal for modern chandeliers and hospitality.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 40W / E27 Amber Glass</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 4. Commercial LED Batten Light -->
+          <article class="product-card product-card-item" data-category="lighting">
+            <div class="product-card-thumb">
+              <img src="../assets/images/shop/showroom-1.jpg" alt="Commercial LED Batten Light" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Lighting</span>
+              <h3 class="product-card-title">Commercial Batten Light</h3>
+              <p class="product-card-desc">High-lumen linear surface tube fixture designed for workshops, retail displays, and offices.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 20W / 4ft Linear Surface</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- ==================== WIRES & CABLES (4 Products) ==================== -->
+          <!-- 5. FR Copper House Wire -->
+          <article class="product-card product-card-item" data-category="wires">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/copper-wire.jpg" alt="FR Copper House Wire" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Wires &amp; Cables</span>
+              <h3 class="product-card-title">FR Copper House Wire 2.5 sq mm</h3>
+              <p class="product-card-desc">100% pure electrolytic copper wire coil with flame retardant multi-strand insulation.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 90m Coil / 1100V</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 6. Heavy-Duty Armoured Cable -->
+          <article class="product-card product-card-item" data-category="wires">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/wires-cables.jpg" alt="Heavy-Duty Armoured Cable" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Wires &amp; Cables</span>
+              <h3 class="product-card-title">Armoured Power Cable</h3>
+              <p class="product-card-desc">Galvanized steel wire armoured underground feeder cable designed for harsh industrial loads.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 4 Core / 6 sq mm / XLPE</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 7. Multicore Flexible Copper Wire -->
+          <article class="product-card product-card-item" data-category="wires">
+            <div class="product-card-thumb">
+              <img src="../assets/images/banners/slide1.jpg" alt="Multicore Flexible Copper Wire" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Wires &amp; Cables</span>
+              <h3 class="product-card-title">Multicore Flexible Cable</h3>
+              <p class="product-card-desc">High flexibility annealed copper conductor cable suitable for machine wiring and control panels.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 3 Core / 1.5 sq mm / 100m</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 8. Shielded Submersible Cable -->
+          <article class="product-card product-card-item" data-category="wires">
+            <div class="product-card-thumb">
+              <img src="../assets/images/banners/slide3.jpg" alt="Shielded Submersible Cable" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Wires &amp; Cables</span>
+              <h3 class="product-card-title">Shielded Submersible Wire</h3>
+              <p class="product-card-desc">Waterproof double sheathed PVC flat cable engineered for borewell pumps and heavy equipment.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 3 Core Flat / 4.0 sq mm</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- ==================== SWITCHES & SOCKETS (4 Products) ==================== -->
+          <!-- 9. Modular Switch Panel -->
+          <article class="product-card product-card-item" data-category="switches">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/switch-panel.jpg" alt="Modular Switch Panel" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Switches &amp; Sockets</span>
+              <h3 class="product-card-title">Modular Switch Panel</h3>
+              <p class="product-card-desc">Modern 4-gang rocker switch plate with smooth tactile response and flame-retardant body.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 10A / 250V</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 10. Smart Touch Switch -->
+          <article class="product-card product-card-item" data-category="switches">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/smart-switch.jpg" alt="Smart Touch Switch" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Switches &amp; Sockets</span>
+              <h3 class="product-card-title">Smart Modular Switch Panel</h3>
+              <p class="product-card-desc">Refined architectural switchboard with subtle LED status indicators and smooth action.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 16A / Modular</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 11. Heavy-Duty Industrial Socket -->
+          <article class="product-card product-card-item" data-category="switches">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/industrial-socket.jpg" alt="Heavy-Duty Industrial Socket" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Switches &amp; Sockets</span>
+              <h3 class="product-card-title">Industrial Power Socket</h3>
+              <p class="product-card-desc">Impact-resistant 3-pin universal power socket fitted with child safety safety shutters.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 16A-250V Shuttered</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 12. Designer Brushed Copper Switch Plate -->
+          <article class="product-card product-card-item" data-category="switches">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/switches-sockets.jpg" alt="Designer Switch Plate" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Switches &amp; Sockets</span>
+              <h3 class="product-card-title">Brushed Copper Switch Plate</h3>
+              <p class="product-card-desc">Luxury metallic finish architectural cover frame bringing bespoke elegance to modern rooms.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 6-Module Metallic Grid</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- ==================== FANS (4 Products) ==================== -->
+          <!-- 13. High-Speed Aero Ceiling Fan -->
+          <article class="product-card product-card-item" data-category="fans">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/ceiling-fan.jpg" alt="Ceiling Fan" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fans</span>
+              <h3 class="product-card-title">High-Speed Aero Ceiling Fan</h3>
+              <p class="product-card-desc">Silent motor aerodynamic fan featuring copper accents, durable blades and high air delivery.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 1200mm / 380 RPM</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 14. Luxury Decorative Ceiling Fan -->
+          <article class="product-card product-card-item" data-category="fans">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/fans.jpg" alt="Luxury Decorative Ceiling Fan" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fans</span>
+              <h3 class="product-card-title">Luxury Decorative Ceiling Fan</h3>
+              <p class="product-card-desc">Ornate metallic trim fan with wide aluminium blades engineered for silent high air circulation.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 1400mm / 52W Motor</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 15. Industrial Exhaust Ventilation Fan -->
+          <article class="product-card product-card-item" data-category="fans">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/ceiling-fan.jpg" alt="Industrial Ventilation Fan" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fans</span>
+              <h3 class="product-card-title">Heavy Ventilation Fan</h3>
+              <p class="product-card-desc">High-velocity steel blade exhaust fan designed for kitchen chimneys, workshops, and commercial godowns.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 300mm / 1400 RPM Metal</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 16. Energy-Saving BLDC Smart Fan -->
+          <article class="product-card product-card-item" data-category="fans">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/fans.jpg" alt="Energy Saving BLDC Fan" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fans</span>
+              <h3 class="product-card-title">BLDC Smart Inverter Fan</h3>
+              <p class="product-card-desc">Brushless DC motor fan with wireless remote control, timer presets, and 65% power reduction.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 28W BLDC / 5-Star Rating</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- ==================== PROTECTION / MCBs (4 Products) ==================== -->
+          <!-- 17. Double Pole MCB -->
+          <article class="product-card product-card-item" data-category="protection">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/mcb.jpg" alt="Miniature Circuit Breaker" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Protection Devices</span>
+              <h3 class="product-card-title">Double Pole MCB 32A</h3>
+              <p class="product-card-desc">DIN-rail mounted miniature circuit breaker designed for rapid thermal overload and short-circuit protection.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 32A / 10kA Trip</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 18. Distribution Box -->
+          <article class="product-card product-card-item" data-category="protection">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/distribution-box.jpg" alt="Distribution Box" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Protection Devices</span>
+              <h3 class="product-card-title">8-Way SPN Distribution Board</h3>
+              <p class="product-card-desc">Epoxy powder coated metal consumer enclosure with insulated copper busbar and neutral link.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: IP43 / Sheet Steel</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 19. Four-Pole RCCB Isolator -->
+          <article class="product-card product-card-item" data-category="protection">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/protection-devices.jpg" alt="Four Pole RCCB Isolator" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Protection Devices</span>
+              <h3 class="product-card-title">Four-Pole RCCB Isolator 63A</h3>
+              <p class="product-card-desc">High-sensitivity current leakage circuit breaker providing life-safety protection against electrical shocks.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 63A / 30mA Sensitivity</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 20. Modular Surge Protective Device -->
+          <article class="product-card product-card-item" data-category="protection">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/mcb.jpg" alt="Surge Protective Device" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Protection Devices</span>
+              <h3 class="product-card-title">Surge Protection Device (SPD)</h3>
+              <p class="product-card-desc">Class II lightning and switching surge arrester safeguarding sensitive residential appliances.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 40kA / 440V AC SPD</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- ==================== ACCESSORIES (4 Products) ==================== -->
+          <!-- 21. Industrial Terminals & Sockets -->
+          <article class="product-card product-card-item" data-category="accessories">
+            <div class="product-card-thumb">
+              <img src="../assets/images/products/industrial-socket.jpg" alt="Industrial Accessories & Sockets" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Accessories</span>
+              <h3 class="product-card-title">Industrial Terminals &amp; Sockets</h3>
+              <p class="product-card-desc">Heavy-duty brass terminal connectors, ground clamps, and industrial-grade high-voltage plugs.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: Industrial Grade Brass</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 22. Heavy-Gauge PVC Conduits -->
+          <article class="product-card product-card-item" data-category="accessories">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/accessories.jpg" alt="PVC Conduit Pipes" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Accessories</span>
+              <h3 class="product-card-title">PVC Conduits &amp; Junctions</h3>
+              <p class="product-card-desc">Flame retardant impact-resistant rigid PVC wiring conduits, circular junction boxes, and accessories.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 25mm Heavy Gauge</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 23. Nickel-Plated Brass Cable Glands -->
+          <article class="product-card product-card-item" data-category="accessories">
+            <div class="product-card-thumb">
+              <img src="../assets/images/banners/precision-hardware.jpg" alt="Brass Cable Glands" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Accessories</span>
+              <h3 class="product-card-title">Brass Cable Glands IP68</h3>
+              <p class="product-card-desc">Weatherproof mechanical cable glands with neoprene seals providing IP68 water protection and strain relief.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: M20-M50 / IP68 Rated</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+          <!-- 24. Heavy-Duty Power Extension Board -->
+          <article class="product-card product-card-item" data-category="accessories">
+            <div class="product-card-thumb">
+              <img src="../assets/images/categories/accessories.jpg" alt="Power Extension Board" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Accessories</span>
+              <h3 class="product-card-title">Heavy Power Extension Board</h3>
+              <p class="product-card-desc">Master switched surge-suppressed power board with 4 universal shuttered sockets and overload reset.</p>
+            </div>
+            <div class="product-card-action">
+              <span style="font-size: 0.82rem; color: var(--muted-text);">Spec: 16A Spike Guard / 3m</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--copper);">In Stock</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (Requirement 5 – Exact Original First Footer)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo-title">SG TRADING COMPANY</div>
+          <span class="footer-logo-tagline">Quality • Reliability • Trust</span>
+          <p class="footer-desc">Your premier electrical supplier providing certified electrical cables, switches, safety gear, and modern illumination solutions.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Product Lines</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=lighting" class="footer-link">Lighting</a></li>
+            <li><a href="products.html?category=wires" class="footer-link">Wires &amp; Cables</a></li>
+            <li><a href="products.html?category=switches" class="footer-link">Switches &amp; Sockets</a></li>
+            <li><a href="products.html?category=fans" class="footer-link">Ceiling Fans</a></li>
+            <li><a href="products.html?category=protection" class="footer-link">Circuit Breakers / MCB</a></li>
+            <li><a href="products.html?category=accessories" class="footer-link">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Showroom &amp; Office</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+            <span>Plot 42, Industrial Electrical Market, Main Road, Commercial Hub</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+            <span>+91 (0) 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+            <span>Mon - Sat: 9:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SG Trading Company. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-circle" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="#" class="social-circle" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>

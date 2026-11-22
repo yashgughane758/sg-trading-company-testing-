@@ -1,0 +1,178 @@
+/* ==========================================================================
+   SG TRADING COMPANY – CONTACT PAGE STYLESHEET (contact.css)
+   Exact Three-Colour Theme: Charcoal (#292D30), Copper (#C98249), Warm White (#F5F1E9)
+   Location Cards & Map Showcase (Message Section Removed)
+   ========================================================================== */
+
+/* Main Contact Section */
+.contact-page-section {
+  padding: 55px 0 75px;
+  background-color: var(--warm-white);
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 36px;
+}
+
+.contact-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-block {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 26px 24px;
+  border: 1px solid rgba(201, 130, 73, 0.22);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all var(--transition-fast);
+}
+
+.contact-info-block:hover {
+  border-color: var(--copper);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-block-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  background: var(--charcoal);
+  color: var(--copper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(201, 130, 73, 0.3);
+}
+
+.contact-block-title {
+  font-family: var(--font-heading);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+}
+
+.contact-block-text {
+  font-size: 0.94rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+/* Location Map Column */
+.contact-map-col {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(201, 130, 73, 0.3);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: none;
+}
+
+.map-footer-bar {
+  padding: 16px 22px;
+  background-color: #faf7f2;
+  border-top: 1px solid rgba(201, 130, 73, 0.2);
+  font-size: 0.88rem;
+  color: var(--charcoal);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page-section,
+  .contact-details-section {
+    padding: 36px 0 54px;
+  }
+  .contact-info-block,
+  .contact-card-box {
+    padding: 22px 18px;
+    gap: 16px;
+  }
+  .contact-block-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .contact-block-title {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+  .contact-block-text {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+  .contact-map-frame {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page-section {
+    padding: 28px 0 44px;
+  }
+  .contact-info-block {
+    padding: 18px 14px;
+    gap: 12px;
+  }
+  .contact-block-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-block-title {
+    font-size: 1.02rem;
+  }
+  .contact-block-text {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+  .contact-map-frame {
+    min-height: 260px;
+  }
+  .map-footer-bar {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-info-block {
+    padding: 14px 10px;
+    gap: 10px;
+  }
+  .contact-block-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .contact-block-title {
+    font-size: 0.96rem;
+  }
+  .contact-block-text {
+    font-size: 0.82rem;
+  }
+}
